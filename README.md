@@ -2,6 +2,8 @@
 
 A sleek and modern GitHub profile viewer built with Next.js, React, and Chart.js. Explore user profiles, repositories, and language statistics with an intuitive interface and responsive design.
 
+![Preview](/screenshot.png)
+
 ## Features
 
 - **User Profile Display**: View detailed GitHub user information including avatar, name, bio, location, company, and statistics

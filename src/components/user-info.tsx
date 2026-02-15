@@ -25,8 +25,8 @@ export function UserInfo({ userData }: UserInfoProps) {
   if (!userData) return null;
 
   return (
-    <section className=" bg-black text-lightestBlue border-gray-800 px-20 py-12 mx-auto md:px-8 md:py-8 sm:px-4 sm:py-4">
-    <div className="bg-black text-lightestBlue max-w-300 mx-auto">
+    <section className=" bg-zinc-50 py-12 mx-auto md:px-8 md:py-8 sm:px-4 sm:py-4">
+    <div className="  max-w-300 mx-auto">
       <div className="px-8 py-12 sm:px-4 sm:py-6">
         {/* Avatar */}
         {userData.avatar_url && (
@@ -40,7 +40,7 @@ export function UserInfo({ userData }: UserInfoProps) {
 
         {/* Name */}
         {userData.name && (
-          <h1 className="text-2xl sm:text-xl mb-2 text-offWhite text-center">{userData.name}</h1>
+          <h1 className="m-0 text-[2.75rem] pb-1.5 md:text-[2.5rem] font-bold text-center">{userData.name}</h1>
         )}
 
         {/* Username */}
@@ -87,28 +87,28 @@ export function UserInfo({ userData }: UserInfoProps) {
         </div>
 
         {/* Stats: Repos / Followers / Following */}
-        <div className="grid grid-cols-3 gap-2 justify-center ">
-          <div className="flex flex-col items-center justify-center bg-darkGrey p-4 rounded text-center sm:p-2">
-            <span className="text-offWhite text-lg sm:text-base font-semibold">
+        <div className="grid grid-cols-3 gap-2 w-fit mx-auto">
+          <div className="flex flex-col items-center justify-center  bg-white p-3 rounded-xl text-center border border-gray-200">
+            <span className=" text-4xl font-semibold">
               {userData.public_repos?.toLocaleString()}
             </span>
-            <Badge variant="secondary" className="mt-2 text-xs uppercase tracking-wider bg-transparent text-[rgba(200,225,255,0.7)] border-0 sm:text-[0.5rem]">
+            <Badge variant="secondary" className="mt-2  uppercase tracking-wider bg-transparent">
               Repositories
             </Badge>
           </div>
-          <div className="flex flex-col items-center justify-center bg-darkGrey p-4 rounded text-center sm:p-2">
-            <span className="text-offWhite text-lg sm:text-base font-semibold">
+          <div className="flex flex-col items-center justify-center  bg-white p-3 rounded-xl text-center border border-gray-200">
+            <span className=" text-4xl font-semibold">
               {userData.followers?.toLocaleString()}
             </span>
-            <Badge variant="secondary" className="mt-2 text-xs uppercase tracking-wider bg-transparent text-[rgba(200,225,255,0.7)] border-0 sm:text-[0.5rem]">
+            <Badge variant="secondary" className="mt-2 uppercase tracking-wider bg-transparent  border-0">
               Followers
             </Badge>
           </div>
-          <div className="flex flex-col items-center justify-center bg-darkGrey p-4 rounded text-center sm:p-2">
-            <span className="text-offWhite text-lg sm:text-base font-semibold">
+          <div className="flex flex-col items-center justify-center  bg-white p-3 rounded-xl text-center border border-gray-200">
+            <span className=" text-4xl font-semibold">
               {userData.following?.toLocaleString()}
             </span>
-            <Badge variant="secondary" className="mt-2 text-xs uppercase tracking-wider bg-transparent text-[rgba(200,225,255,0.7)] border-0 sm:text-[0.5rem]">
+            <Badge variant="secondary" className="mt-2  uppercase tracking-wider bg-transparent border-0">
               Following
             </Badge>
           </div>

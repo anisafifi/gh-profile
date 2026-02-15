@@ -9,6 +9,7 @@ A sleek and modern GitHub profile viewer built with Next.js, React, and Chart.js
 - **User Profile Display**: View detailed GitHub user information including avatar, name, bio, location, company, and statistics
 - **Language Statistics**: Interactive charts showing programming language usage across all repositories
 - **Repository Listing**: Browse through user's public repositories with star counts, forks, and descriptions
+- **RESTful API**: Programmatic access to user data via `/api/[username]` endpoint
 - **Username Validation**: Real-time validation of GitHub usernames before fetching data
 - **Rate Limit Handling**: Displays current GitHub API rate limit status
 - **Error Handling**: Comprehensive error handling for invalid users, API failures, and rate limits

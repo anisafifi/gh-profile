@@ -125,7 +125,7 @@ export function Charts({ langData, repoData }: ChartsProps) {
 
   return (
     <section className="px-20 py-12 max-w-300 mx-auto md:px-8 md:py-8 sm:px-4 sm:py-4">
-       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-4">
+       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card className="bg-white shadow-lg w-full">
           <CardHeader className="pb-2">
             <CardTitle className="inline-block m-0 text-[1.75rem] pb-1.5 md:text-[1.5rem] font-bold">

@@ -9,6 +9,7 @@ import {Charts} from '@/components/Charts';
 import Repos from '@/components/Repos';
 import Error from '@/components/Error';
 import { UserInfo } from '@/components/user-info';
+import { GitHubContributionChart } from '@/components/GitHubContributionChart';
 
 const UserContent = () => {
   const params = useParams();
@@ -29,6 +30,11 @@ const UserContent = () => {
           {/* <Corner /> */}
 
           {userData && <UserInfo userData={userData} />}
+
+          {/* GitHub Contribution Chart */}
+          {userData && userData.login && (
+            <GitHubContributionChart username={userData.login} style={{ margin: '2rem 0' }} />
+          )}
 
           {langData && repoData && <Charts langData={langData} repoData={repoData} />}
 
